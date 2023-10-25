@@ -1,0 +1,38 @@
+Objective: 
+The objective of this assignment is to assess your skills and knowledge as a Software Engineer in the areas 
+of Python Flask/Django, MySQL, and Git concepts. You will be required to complete a series of tasks that 
+simulate real-world scenarios and demonstrate your understanding and proficiency in these technologies. 
+
+Task 2: Database Interaction 
+ a. Create a MySQL database with the name "users". 
+ b. Design a table "users" with the following columns: 
+ - id (int, primary key) 
+ - name (varchar) 
+ - email (varchar) 
+ - role (varchar) 
+ c. Write SQL queries to: 
+ - Insert sample data into the "users" table. 
+ - Retrieve all users from the "users" table. 
+ - Retrieve a specific user by their ID.
+ 
+Preview:
+a. For Creating database use 
+CREATE DATABASE users;
+b.Before creating the table we need to use the database first
+USE users;
+Then create table by
+CREATE TABLE users(id INT PRIMARY KEY, name VARCHAR (20), email VARCHAR (20),role VARCHAR (20));
+C. Then insert sample demo values into the table by 
+INSERT INTO users VALUES (1,'aafreen','aaf@gmail.com','web developer');
+INSERT INTO users values(2,'afreen','afreen@gmail.com','web developer');
+INSERT INTO users values(3,'savitha','savi@gmail.com',' application developer');
+INSERT INTO users values(4,'sharmila','sharmila@gmail.com','web developer');
+INSERT INTO users values(5,'afrose','afrose@gmail.com',' Accountant');
+
+Retrieve all the user by
+SELECT * FROM users;
+
+Retrieve specific user by
+SELECT * FROM users WHERE I'd=2;
+
+
